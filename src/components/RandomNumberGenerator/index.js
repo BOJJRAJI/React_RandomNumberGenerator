@@ -1,17 +1,16 @@
 import {Component} from 'react'
-
 import './index.css'
 
 class RandomNumberGenerator extends Component {
-  state = {number: 0}
+  state = {count: 0}
 
-  onGenerateNumber = () => {
+  changeNumber = () => {
     const randomNumber = Math.ceil(Math.random() * 100)
-    this.setState({number: randomNumber})
+    this.setState(prevState => ({count: prevState.count + randomNumber}))
   }
 
   render() {
-    const {number} = this.state
+    const {count} = this.state
     return (
       <div className="bg-container">
         <div className="card">
@@ -19,14 +18,10 @@ class RandomNumberGenerator extends Component {
           <p className="para">
             Generate a random number in the range of 0 to 100
           </p>
-          <button
-            className="button"
-            type="button"
-            onClick={this.onGenerateNumber}
-          >
+          <button className="button" type="button" onClick={this.changeNumber}>
             Generate
           </button>
-          <p className="count">{number}</p>
+          <p className="count">{count}</p>
         </div>
       </div>
     )
