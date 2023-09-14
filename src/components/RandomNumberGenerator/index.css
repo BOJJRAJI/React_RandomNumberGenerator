@@ -1,44 +1,41 @@
 .bg-container {
-  padding: 10px;
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background-image: url('https://assets.ccbp.in/frontend/react-js/random-no-generator-bg.png');
-  background-size: cover;
 }
 .card {
-  padding: 30px;
-  background-color: #ffffff;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  box-shadow: 0px 4px 16px 0px;
+  padding: 40px;
+  background-color: #ffffff;
 }
 .heading {
-  font-family: 'Roboto';
   font-size: 30px;
+  font-family: 'Roboto';
   color: #0b69ff;
   font-weight: bold;
 }
 .para {
+  font-size: 20px;
   font-family: 'Roboto';
-  font-size: 13px;
   color: #333333;
 }
 .button {
-  border-width: 0px;
   background-color: #0b69ff;
   color: #ffffff;
-  border-radius: 7px;
+  border: none;
   padding: 10px;
+  border-radius: 7px;
 }
 .count {
-  font-family: 'Roboto';
   font-size: 30px;
+  font-family: 'Roboto';
   color: #0b69ff;
   font-weight: bold;
 }
